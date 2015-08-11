@@ -67,6 +67,7 @@ public enum ConnectMan {
             databases.add(rs.getString("TABLE_CAT"));
         }
         rs.close();
+        con.close();
         return databases;
     }
 }
